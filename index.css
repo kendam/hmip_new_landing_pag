@@ -1,0 +1,34 @@
+#heroBg{
+    background-image: url('./images/background.png');
+    background-size: contain;
+    background-position: center;
+}
+#calculatorBg{
+    background-image: url('./images/calculatorBg.png');
+    background-size: contain;
+    background-position: center;
+}
+#housingPulse {
+    background-image: linear-gradient(to right, #3d6167, #5CA47A );
+    color: #F8F9FA;
+  }
+  .indice{
+    color: #b5b5b5;
+  }
+  footer{
+    background-color: #508A73;
+  }
+
+  .carousel-container {
+    width: 100%;
+    max-width: 800px; /* Set your preferred max-width */
+    margin: 0 auto;
+}
+
+.carousel-wrapper {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}
