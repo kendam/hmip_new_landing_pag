@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Housing Data</title>
+  </head>
+  <body class="m-0 p-0">
+    <!-- hero -->
+    <section class="p-6 w-full" id="houseDataBg">
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="mb-6 font-bold text-4xl text-white">
+          Housing Data % of Populations by states
+        </h2>
+        <!-- search input -->
+        <div class="w-1/3 p-2 mx-auto mt-5 border border-gray-500 rounded-2xl">
+          <div
+            class="flex items-center rounded-lg focus-within:border-blue-500"
+          >
+            <input
+              type="text"
+              placeholder="Search Data e.g Population, GDP, Western State"
+              class="w-full pl-4 pr-8 py-2 px-10 bg-transparent focus:outline-none placeholder-gray-500"
+            />
+
+            <div class="">
+              <div>
+                <img src="./images/v-icon.png" alt="" />
+              </div>
+              <!-- <i class="fas fa-chevron-down text-gray-500"></i> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- housing data  -->
+    <section class="relative">
+      <h2
+        class="housinDataHeader text-[#494848] font-medium text-center text-3xl mt-12 mb-12"
+      >
+        HOUSING DATA (% of population) - Nigeria
+      </h2>
+
+      <div class="bgHousingDataContiner m-12 p-4">
+        <div class="flex justify-between">
+          <div class="flex gap-6">
+            <!-- FIRST BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Line
+            </button>
+            <!-- SECOND BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Bar
+            </button>
+            <!-- 3RD BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Map
+            </button>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex justify-center items-center">
+              <button class="bgHousingDataButtonColor rounded text-lg">
+                Export
+              </button>
+
+              <div class="rounded-md w-full md:w-1/2">
+                <img src="./images/exportIcon.png" alt="" class="rounded-md" />
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button class="bgHousingDataButtonColor rounded text-lg">
+                Details
+              </button>
+
+              <div class="rounded-md w-full md:w-1/2">
+                <img src="./images/detailIcon.png" alt="" class="rounded-md" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lineContainer mt-12">
+          <div>
+            <h1>line</h1>
+          </div>
+        </div>
+
+        <div class="barContainer mt-12">
+          <div>
+            <h1>bar</h1>
+          </div>
+        </div>
+
+        <div class="graphContainer relative">
+          <div class="">
+            <img src="./images/map.png" alt="" class="" />
+          </div>
+
+          <div class="" id="whiteBgContainer">
+            <div class="overlayImage">
+              <img src="./images/mapImage.png" alt="" class="" />
+              <div>
+                <p class="text-2xl">Plateau</p>
+                <!-- first -->
+                <div class="flex justify-center items-center gap-4">
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/darkEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/yellowEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="flex justify-center items-center gap-4">
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/purpleEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/blue.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- year -->
+          <div class="graphYear">
+            <div class="flex gap-4 items-center justify-around">
+              <p class="text-2xl">2014</p>
+              <p class="text-2xl">2015</<p>
+              <p class="text-2xl">2016</p>
+              <p class="text-2xl">2017</p>
+              <p class="text-2xl">2018</p>
+              <p class="text-2xl">2019</p>
+              <p class="text-2xl">2020</p>
+              <p class="text-2xl">2021</p>
+              <p class="text-2xl">2022</p>
+              <p class="text-2xl">2023</p>
+              <p class="text-2xl">2014</p>
+            </div>
+            <div class="mt-4 flex items-center">
+                <img src="./images/progressbar.png" alt="" class="" />
+                <hr class="horizontal-line" /> 
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stateData flex-col justify-center items-center w-full">
+        <div class=" flex flex-col justify-center items-center mb-12 ">
+
+            <h2
+            class=" text-white font-medium  text-3xl mt-12"
+          >
+          All States and Housing Data
+          </h2>
+          <p class="text-2xl text-white">Be fully informed  on the Housing data of each Nigerian States </p>
+        </div>
+<!-- table here -->
+
+<div class="table-container">
+    <table class="housing-data-table">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Geo Data</th>
+          <th>Most Recent Year</th>
+          <th>Most Recent Value</th>
+          <th>Housing Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Abia</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Adamawa</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Akwa Ibom</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Anambara</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          
+          <tr>
+            <td>Buchi</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Banue</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Bornu</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+
+          </tr>
+
+          <tr>
+            <td>Cross River</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Delta</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Ebonyi</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Edo</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Ekiti</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+        <tr>
+          <td>Lagos</td>
+          <td>South West</td>
+          <td>2023</td>
+          <td>85%</td>
+          <td>20 million</td>
+        </tr>
+        <tr>
+          <td>Kano</td>
+          <td>North West</td>
+          <td>2023</td>
+          <td>78%</td>
+          <td>14 million</td>
+        </tr>
+
+        <tr>
+            <td>Enugu</td>
+            <td>South West</td>
+            <td>2023</td>
+            <td>85%</td>
+            <td>20 million</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
