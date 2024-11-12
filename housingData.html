@@ -17,8 +17,41 @@
     <title>Housing Data</title>
   </head>
   <body class="m-0 p-0">
-    <!-- hero -->
-    <section class="p-6 w-full" id="houseDataBg">
+
+    <div class="bg-gray-800 py-6">
+        <div class="flex justify-between mx-20 flex items-center">
+          <div class="logo md:w-1/4 w-1/3">
+            <div>
+              <img src="./images/logo.png" alt="" />
+            </div>  
+            
+          </div>
+          <!-- desktop header -->
+          <div class="w-3/4 hidden md:block flex items-start gap-10">
+            <ul class="flex items-start gap-10 text-gray-400">
+              <li>Housing Data Portal</li>
+              <li><a href="housingData.html">Property Information</a></li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <!-- mobile dropdown -->
+          <div class=" md:hidden">
+            <ul class="flex flex-col gap-4 p-10">
+              <li>Housing Data Portal</li>
+              <li>Property Information</li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- main page-->
+    <section class="p-6 w-full mt-12" id="houseDataBg">
       <div class="flex flex-col justify-center items-center">
         <h2 class="mb-6 font-bold text-4xl text-white">
           Housing Data % of Populations by states
@@ -323,6 +356,56 @@
     </table>
   </div>
     </section>
+
+    <!-- footer -->
+
+    <footer>  
+        <div class="py-4 px-2 md:px-8 ">
+            <div class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12">
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">About</h4>
+                    <p class="w-full md:w-9/12">Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and easy place to access the data you need to make important business decisions.</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">Account Links</h4>
+                    <ul class="flex flex-col gap-2">
+                        <li>Property</li>
+                        <li>Dashboard</li>
+                        <li>News</li>
+                        <li>Contact</li>
+                        <li>Survey Participation</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">Contact Us</h4>
+                    <ul class="flex flex-col gap-2 pb-8">
+                        <li>Property</li>
+                        <li>Dashboard</li>
+                    </ul>
+                    <ul>
+                        <li class="pb-4">Hr:  +234 456 7890 12</li>
+                        <li class="pb-4">Hr:  +234 456 7890 12</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class=" py-2 md:mx-20 mx-5 mt-10 ">
+                <div class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-gray-400 px-0 md:px-4 py-2 items-center justify-between">
+                    <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">Newsletter Sign up</p>
+                    <div class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2">
+                        <input type="text" placeholder="Enter your email address" class="text-black text-center md:pb-4 pb-0 md:text-center">
+                        <button class="bg-green-700 py-1 px-8 rounded-md text-white">Submit</button>
+                    </div>
+                   
+                </div>
+                   
+            </div>
+
+            <div class="text-center text-white pt-10 pb-20">
+              <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+            </div>
+        </div>
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>
