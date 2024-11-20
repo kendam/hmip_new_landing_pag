@@ -1,34 +1,173 @@
-#heroBg{
-    background-image: url('./images/background.png');
-    background-size: contain;
-    background-position: center;
+#heroBg {
+  background-image: url("./images/background.png");
+  background-size: contain;
+  background-position: center;
 }
-#calculatorBg{
-    background-image: url('./images/calculatorBg.png');
-    background-size: contain;
-    background-position: center;
+
+#calculatorBg {
+  background-image: url("./images/calculatorBg.png");
+  background-size: contain;
+  background-position: center;
 }
 #housingPulse {
-    background-image: linear-gradient(to right, #3d6167, #5CA47A );
-    color: #F8F9FA;
-  }
-  .indice{
-    color: #b5b5b5;
-  }
-  footer{
-    background-color: #508A73;
-  }
+  background-image: linear-gradient(to right, #3d6167, #5ca47a);
+  color: #f8f9fa;
+}
+.indice {
+  color: #b5b5b5;
+}
+footer {
+  background-color: #508a73;
+}
 
-  .carousel-container {
-    width: 100%;
-    max-width: 800px; /* Set your preferred max-width */
-    margin: 0 auto;
+.carousel-container {
+  width: 100%;
+  max-width: 800px; /* Set your preferred max-width */
+  margin: 0 auto;
 }
 
 .carousel-wrapper {
-    transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+/* housing data */
+#houseDataBg {
+  background-image: url("./images/HouseData_Bg.png");
+  background-size: contain;
+  background-position: center;
+}
+h2 .housinDataHeader {
+  color: #494848;
+}
+
+.bgHousingDataContiner {
+  background-color: #f3f2f2;
+}
+
+.bgHousingDataButtonColor {
+  color: #6f9c76;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.bgHousingDataButtonColor:focus,
+.bgHousingDataButtonColor:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.bgHousingDataButtonColorActive {
+  background-color: white !important;
+  color: #494848;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/* .lineContainer {
+  background-color: #f3f2f2;
+}
+
+.barContainer {
+  background-color: #f3f2f2;
+}
+
+.graphContainer {
+  background-color: #f3f2f2;
+} */
+
+.lineContainer,
+.barContainer,
+.graphContainer {
+  display: none;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#whiteBgContainer {
+  background-image: url("./images/whitebg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+
+  height: 300px; /* Set an appropriate height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayImage {
+  width: 100%; /* Ensures the overlay image fills the container */
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.graphYear {
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 3px;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid gray;
+  /* margin-top: 10px; */
+  width: 800%;
+}
+
+.stateData {
+  background-color: #262637;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+/* table */
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.housing-data-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.housing-data-table th,
+.housing-data-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.housing-data-table th {
+  background-color: #f3f3f3;
+  color: #494848;
+  font-weight: bold;
+  text-align: center;
+}
+
+.housing-data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.housing-data-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
 }

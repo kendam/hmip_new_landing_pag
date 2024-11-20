@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Housing Data</title>
+  </head>
+  <body class="m-0 p-0">
+
+    <div class="bg-gray-800 py-6">
+        <div class="flex justify-between mx-20 flex items-center">
+          <div class="logo md:w-1/4 w-1/3">
+            <div>
+              <img src="./images/logo.png" alt="" />
+            </div>  
+            
+          </div>
+          <!-- desktop header -->
+          <div class="w-3/4 hidden md:block flex items-start gap-10">
+            <ul class="flex items-start gap-10 text-gray-400">
+              <li > <a href="index.html">Housing Data Portal </a></li>
+              <li><a href="housingData.html">Property Information</a></li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <!-- mobile dropdown -->
+          <div class=" md:hidden">
+            <ul class="flex flex-col gap-4 p-10">
+              <li>Housing Data Portal</li>
+              <li>Property Information</li>
+              <li>Surveys</li>
+              <li>Housing Market Directory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!-- main page-->
+    <section class="p-6 w-full " id="houseDataBg">
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="mb-6 font-bold text-4xl text-white">
+          Housing Data % of Populations by states
+        </h2>
+        <!-- search input -->
+        <div class="w-full md:w-1/3 p-2 mx-auto mt-5 border border-gray-500 rounded-2xl">
+          <div
+            class="flex items-center rounded-lg focus-within:border-blue-500"
+          >
+            <input
+              type="text"
+              placeholder="Search Data e.g Population, GDP, Western State"
+              class="w-full pl-4 pr-8 py-2 px-10 bg-transparent focus:outline-none placeholder-gray-500"
+            />
+
+            <div class="">
+              <div>
+                <img src="./images/v-icon.png" alt="" />
+              </div>
+              <!-- <i class="fas fa-chevron-down text-gray-500"></i> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- housing data  -->
+    <section class="relative">
+      <h2
+        class="housinDataHeader text-[#494848] font-medium text-center text-3xl mt-12 mb-12"
+      >
+        HOUSING DATA (% of population) - Nigeria
+      </h2>
+
+      <div class="bgHousingDataContiner m-2 md:m-12 p-4">
+        <div class="flex justify-between">
+          <div class="flex gap-6">
+            <!-- FIRST BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Line
+            </button>
+            <!-- SECOND BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Bar
+            </button>
+            <!-- 3RD BUTTON -->
+            <button class="bgHousingDataButtonColor rounded text-lg">
+              Map
+            </button>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex justify-center items-center">
+              <button class="bgHousingDataButtonColor rounded text-lg">
+                Export
+              </button>
+
+              <div class="rounded-md w-full md:w-1/2">
+                <img src="./images/exportIcon.png" alt="" class="rounded-md" />
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <button class="bgHousingDataButtonColor rounded text-lg">
+                Details
+              </button>
+
+              <div class="rounded-md w-full md:w-1/2">
+                <img src="./images/detailIcon.png" alt="" class="rounded-md" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lineContainer mt-12">
+          <div>
+            <h1>line</h1>
+          </div>
+        </div>
+
+        <div class="barContainer mt-12">
+          <div>
+            <h1>bar</h1>
+          </div>
+        </div>
+
+        <div class="graphContainer relative">
+          <div class="">
+            <img src="./images/map.png" alt="" class="" />
+          </div>
+
+          <div class="" id="whiteBgContainer">
+            <div class="overlayImage">
+              <img src="./images/mapImage.png" alt="" class="" />
+              <div>
+                <p class="text-2xl">Plateau</p>
+                <!-- first -->
+                <div class="flex justify-center items-center gap-4">
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/darkEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/yellowEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="flex justify-center items-center gap-4">
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/purpleEllipse.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                  <div class="flex justify-center items-center gap-1">
+                    <div>
+                      <img src="./images/blue.png" alt="" class="" />
+                    </div>
+
+                    <p>Indices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- year -->
+          <div class="graphYear">
+            <div class="flex flex-col gap-4 items-center justify-around md:flex-row">
+              <p class="text-2xl">2014</p>
+              <p class="text-2xl">2015</<p>
+              <p class="text-2xl">2016</p>
+              <p class="text-2xl">2017</p>
+              <p class="text-2xl">2018</p>
+              <p class="text-2xl">2019</p>
+              <p class="text-2xl">2020</p>
+              <p class="text-2xl">2021</p>
+              <p class="text-2xl">2022</p>
+              <p class="text-2xl">2023</p>
+              <p class="text-2xl">2014</p>
+            </div>
+            <div class="mt-4 flex items-center">
+                <img src="./images/progressbar.png" alt="" class="" />
+                <hr class="horizontal-line" /> 
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stateData flex-col justify-center items-center w-full">
+        <div class=" flex flex-col justify-center items-center mb-12 ">
+
+            <h2
+            class=" text-white font-medium  text-3xl mt-12"
+          >
+          All States and Housing Data
+          </h2>
+          <p class="text-lg text-gray-500">Be fully informed  on the Housing data of each Nigerian States </p>
+        </div>
+<!-- table here -->
+
+<div class="table-container ">
+<!-- <div class="table-scroll"> -->
+  
+    <table class="housing-data-table">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Geo Data</th>
+          <th>Most Recent Year</th>
+          <th>Most Recent Value</th>
+          <th>Housing Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Abia</td>
+            <td>Content</td>
+            <td>2020</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Adamawa</td>
+            <td>Content</td>
+            <td>2021</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Akwa Ibom</td>
+            <td>Content</td>
+            <td>2020</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Anambara</td>
+            <td>Content</td>
+            <td>2024</td>
+            <td>85%</td>
+            <td>22,098,000</td>
+          </tr>
+
+          
+          <tr>
+            <td>Buchi</td>
+            <td>Content</td>
+            <td>2022</td>
+            <td>2.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Banue</td>
+            <td>Content</td>
+            <td>2023</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Bornu</td>
+            <td>Content</td>
+            <td>2020</td>
+            <td>32.6b</td>
+            <td>22,098,000</td>
+
+          </tr>
+
+          <tr>
+            <td>Cross River</td>
+            <td>Content</td>
+            <td>2022</td>
+            <td>3.36b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Delta</td>
+            <td>Content</td>
+            <td>2020</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Ebonyi</td>
+            <td>Content</td>
+            <td>2024</td>
+            <td>31.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+          <tr>
+            <td>Edo</td>
+            <td>Content</td>
+            <td>2021</td>
+            <td>36.6b</td>
+            <td>20 million</td>
+          </tr>
+
+          <tr>
+            <td>Ekiti</td>
+            <td>Content</td>
+            <td>2023</td>
+            <td>3.6b</td>
+            <td>22,098,000</td>
+          </tr>
+          
+        <tr>
+            <td>Enugu</td>
+            <td>Content</td>
+            <td>2021</td>
+            <td>63.6b</td>
+            <td>22,098,000</td>
+          </tr>
+
+        <tr>
+          <td>FCT</td>
+          <td>Content</td>
+          <td>2023</td>
+          <td>39.6b</td>
+          <td>22,098,000</td>
+        </tr>
+        <tr>
+          <td>Gombe</td>
+          <td>Content</td>
+          <td>2021</td>
+          <td>3.6b</td>
+          <td>22,098,000</td>
+        </tr>
+
+                <tr>
+          <td>Imo</td>
+          <td>Content</td>
+          <td>2022</td>
+          <td>83.6b</td>
+          <td>22,098,000</td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  <!-- </div> -->
+</div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>  
+        <div class="py-4 px-2 md:px-8 ">
+            <div class="flex flex-col md:flex-row gap-10 items-start text-white text-sm md:mx-20 mx-5 mt-12">
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">About</h4>
+                    <p class="w-full md:w-9/12">Nigeria Mortgage Refinance Company (NMRC ) is the Quickest and easy place to access the data you need to make important business decisions.</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">Account Links</h4>
+                    <ul class="flex flex-col gap-2">
+                        <li>Property</li>
+                        <li>Dashboard</li>
+                        <li>News</li>
+                        <li>Contact</li>
+                        <li>Survey Participation</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h4 class="pb-4 font-bold">Contact Us</h4>
+                    <ul class="flex flex-col gap-2 pb-8">
+                        <li>Property</li>
+                        <li>Dashboard</li>
+                    </ul>
+                    <ul>
+                        <li class="pb-4">Hr:  +234 456 7890 12</li>
+                        <li class="pb-4">Hr:  +234 456 7890 12</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class=" py-2 md:mx-20 mx-5 mt-10 ">
+                <div class="flex w-full gap-6 md:text-left text-center flex-col md:flex-row bg-gray-400 px-0 md:px-4 py-2 items-center justify-between">
+                    <p class="w-full md:w-1/2 pl-0 md:pl-6 text-white">Newsletter Sign up</p>
+                    <div class="bg-white flex-col md:flex-row flex px-4 justify-between w-full md:w-2/3 rounded-lg py-2">
+                        <input type="text" placeholder="Enter your email address" class="text-black text-center md:pb-4 pb-0 md:text-center">
+                        <button class="bg-green-700 py-1 px-8 rounded-md text-white">Submit</button>
+                    </div>
+                   
+                </div>
+                   
+            </div>
+
+            <div class="text-center text-white pt-10 pb-20">
+              <p>Copyright © 2023, Nigeria Mortgage Refinance Company.</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
